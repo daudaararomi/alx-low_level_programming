@@ -16,8 +16,7 @@ int main(void)
 		putchar(c);
 	}
 
-	putchar("\n");
-	/* your code goes there */
-
+	putchar('\n');
+	
 	return (0);
 }
