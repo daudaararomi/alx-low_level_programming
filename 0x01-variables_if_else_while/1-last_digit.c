@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -14,7 +14,7 @@ int main(void)
 {
 	int n;
 	int m;
-	m = n%10;
+	m = n % 10;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
