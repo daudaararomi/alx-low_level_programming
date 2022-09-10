@@ -23,8 +23,8 @@ int main(void)
 					putchar((c1 % 10) + '0');
 					putchar((c2 % 10) + '0');
 				      	putchar(' ');
-					putchar((c4 % 10) + '0');
 					putchar((c3 % 10) + '0');
+					putchar((c4 % 10) + '0');
 					if (c1 <= 9)
 					{
 						putchar(',');
