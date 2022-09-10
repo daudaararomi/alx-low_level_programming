@@ -18,7 +18,7 @@ int main(void)
 		{
 			putchar((c1 % 10) + '0');
 			putchar((c2 % 10) + '0');
-			if (c2 < 9 && c1 < 8)
+			if (c2 <= 9 && c1 < 8)
 			{
 				putchar(',');
 				putchar(' ');
