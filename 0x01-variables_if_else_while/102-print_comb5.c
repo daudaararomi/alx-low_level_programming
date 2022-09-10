@@ -11,7 +11,7 @@
 int main(void)
 {
 	int c1, c2, c3, c4, c5;
-	c5 =1;
+	
 	for (c1 = 0; c1 <= 9; ++c1)
 	{
 		for (c2 = 0; c2 <= 9; ++c2)
