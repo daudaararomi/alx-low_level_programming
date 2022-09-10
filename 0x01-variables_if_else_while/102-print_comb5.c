@@ -16,14 +16,13 @@ int main(void)
 	{
 		for (c2 = 0; c2 <= 9; ++c2)
 		{
-			for (c3 = 0; c3 <= 9; c3++)
+			for (c3 = 0; c3 <= 9; ++c3)
 			{
-				for (c4 =1; c4 <= 9; c4++)
+				for (c4 = 1; c4 <= 9; ++c4)
 				{
 					putchar((c1 % 10) + '0');
 					putchar((c2 % 10) + '0');
-					putchar(',');
-					putchar(' ');
+				      	putchar(' ');
 					putchar((c3 % 10) + '0');
 					putchar((c4 % 10) + '0');
 					if (c1 <= 9)
