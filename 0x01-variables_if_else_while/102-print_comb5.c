@@ -18,10 +18,9 @@ int main(void)
 		{
 			for (c3 = 0; c3 <= c2; c3++)
 			{
-				putchar((c1 % 10) + '0');
-				putchar((c2 % 10) + '0');
+			      	putchar((c2 % 10) + '0');
 				putchar((c3 % 10) + '0');
-				if (c3 <= 9 && c2 <= 8 && c1 < 7)
+				if (c3 <= 9)
 				{
 					putchar(',');
 					putchar(' ');
