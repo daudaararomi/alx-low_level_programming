@@ -21,7 +21,7 @@ int main(void)
 				putchar((c1 % 10) + '0');
 				putchar((c2 % 10) + '0');
 				putchar((c3 % 10) + '0');
-				if (c3 <= 9 && c2 < 8 && c < 7 )
+				if (c3 <= 9 && c2 < 8 && c1 < 7 )
 				{
 					putchar(',');
 					putchar(' ');
