@@ -1,21 +1,20 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
+ * main - Entry function
  *
- * main - check the code.
- *
- *Return: Always 0
- *
- *program to print out _putchar
+ * Return: 0
  */
 int main(void)
 {
-	char name[9];
-	name = "_putchar";
-	int n;
-	for ( n = 0; n < 9; ++n)
-		putchar(name[n]);
-	putchar('\n'); /* to move to next line */
+	char s[9];
+	int i;
+
+	s ="_putchar";
+	for (i = 0; i <= 9; i++)
+	{
+		_putchar(s[i]);
+	}
+	_putchar('\n');
 	return (0);
 }
