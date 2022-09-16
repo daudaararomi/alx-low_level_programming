@@ -5,4 +5,6 @@
 
 void positive_or_negative(int i);
 
+void postive_or_negative(int i);
+
 #endif /* MAIN_H */
