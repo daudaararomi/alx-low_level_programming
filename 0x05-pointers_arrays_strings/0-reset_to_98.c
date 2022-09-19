@@ -1,9 +1,9 @@
 #include "main.h"
 
-/**0-reset_to_98
- *@m: a pointer the integer we want to set to 98
+/** 0-reset_to_98
+ * @m: a pointer the integer we want to set to 98
  *
- *Return: nothing
+ * Return: nothing
  */
 void reset_to_98(int *n)
 {
