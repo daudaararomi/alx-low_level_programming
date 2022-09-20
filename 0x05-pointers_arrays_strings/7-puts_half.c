@@ -25,9 +25,9 @@ void puts_half(char *str)
 
 	while ((n + i) <= c)
 	{
-		if (*(str + i) != '\0')
+		if (*(str + n + i) != '\0')
 		{
-			putchar(*(str + i));
+			putchar(*(str + n + i));
 		}
 		i = i + 1;
 	}
