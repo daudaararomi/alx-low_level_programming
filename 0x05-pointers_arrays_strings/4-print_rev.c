@@ -14,9 +14,12 @@ void print_rev(char *s)
 	{
 		c = c + 1;
 	}
-	while (c >=  0)
+	while (c >= 0)
 	{
-		putchar(*(s + c-1));
+		if (*(s + c) != '\0')
+		{
+			putchar(*(s + c));
+		}
 		c = c - 1;
 	}
 
