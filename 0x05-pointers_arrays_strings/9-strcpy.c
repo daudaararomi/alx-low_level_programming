@@ -2,13 +2,15 @@
 #include <stdio.h>
 /**
  * _srtcpy  - copy stringy
- * @dest :detination char pointer
- * @src : src char pointer
+ * @dest :destination char pointer
+ * @src : source char pointer
  * Return: nothing
  */
+int i = 0;
 
 char *_strcpy(char *dest, char *src)
 {
-	dest = &src;
-	return (*dest);
+	while (*(stc + i) == '\0')
+	dest[i] = &src[i];
+	return (dest);
  }
