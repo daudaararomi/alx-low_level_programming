@@ -5,18 +5,17 @@
  * @s : string variable
  * Return: nothing
  */
-
 void rev_string(char *s)
 {
-	int len = _strlen(s);
-  	char str[len] ;
-	int i;
+	int i, len, len1;
+	char temp;
 
-	for ( i = len ; i >= 0; i--)
+	len = str_len(s);
+	len1 = len - 1;
+	for (i = 0; i < len / 2; i++)
 	{
-		*(str + (len-i)) = *(s + i);
-       	}
-
-	*s = *str;
-	putchar('\n');
+		temp = s[i];
+		s[i] = s[len1];
+		s[len1--] = temp;
+	}
 }
