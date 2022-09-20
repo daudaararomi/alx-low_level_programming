@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * puts2  - print every other characters
- * @s : string variable
+ * @str : string variable
  * Return: nothing
  */
 
