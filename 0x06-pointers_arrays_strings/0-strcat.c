@@ -20,6 +20,5 @@ char *_strcat(char *dest, char *src)
 		i = i + 1;
 		src++;
 	}
-
 	return(dest);
 }
