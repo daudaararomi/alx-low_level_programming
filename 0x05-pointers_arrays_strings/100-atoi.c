@@ -8,17 +8,16 @@
 
 int _atoi(char *s)
 {
-	int i = 0;
-	int *int_i;
+       	int *int_i;
 
 	while (*s  != '\0')
 	{
-		if (%d *s == 43 && d% *s == 45 AND %d *s >= 48 && *s <= 57)
+		if (*s == 43 && *s == 45 AND  *s >= 48 && *s <= 57)
 		{
 			*int_i = (int) *s;
 		}
-		*s++;
-		*int_i++;
+		s++;
+		int_i++;
 	}
 
 	return (int_i);
