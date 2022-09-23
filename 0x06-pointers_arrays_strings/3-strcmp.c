@@ -7,27 +7,31 @@
  * *
  * Return: integer
  */
-
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
+	int i, j, k, l, result;
 
-	while(*s1 != '\0' || *s2 != '\0')
+	result = 0;
+	k = 0;
+	l = 0;
+	while (s1[k] != '\0')
 	{
-		if(*s1 == *s2)
-		{
-			i = -15;
-		}
-		else if(*s2 == *s1)
-		{
-			i = 15;
-		}
+		k++;
+	}
+	while (s2[l] != '\0')
+	{
+		l++;
+	}
+	for (i = 0, j = 0; i <= k && j <= l; i++, j++)
+	{
+		if ((s1[i] - s2[j]) == 0)
+			continue;
 		else
 		{
-			i = 0;
+			result = s1[i] - s2[j];
+			break;
 		}
-		s1++;
-		s2++;
 	}
-		return(i);
+	return (result);
 }
+
