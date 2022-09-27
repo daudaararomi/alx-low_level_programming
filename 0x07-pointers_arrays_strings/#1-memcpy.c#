@@ -2,7 +2,7 @@
 
 /**
  * _memset - function to fil a memory with constant bytes
- * @n:byte of memory area pointed by s
+* @n: byte of memory area pointed by s
  * @b:constant byte
  * @s:a Pointer to memory
  *
