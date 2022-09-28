@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 		while (*s != '\0')
 		{
 			if (*s == *accept)
-				i = i +  1;
+				i = i +  sizeof(*accept);
 			s = s + 1;
 			ii = ii + 1;
 		}
