@@ -1,0 +1,29 @@
+#include "main.h"
+
+/**
+ * _strspn -function that gets the length of a prefix substring
+ * @s:srtring to count its the byte of the number of its segement
+ * @accept: hold characters whose byte to count
+ *
+ * Return: the number the number of bytes
+ */
+
+unsigned int _strspn(char *s, char *accept)
+{
+	unsigned int i = 0;
+	char *ss;
+
+	while (*accept != '\0')
+	{
+		*ss = *s;
+		while (*ss != '\0')
+		{
+			if (*ss == *accept)
+				i = i +  1;
+			ss = ss + 1;
+		}
+		ss = NULL;
+		accept = accept + 1;
+	}
+	return (i);
+}
