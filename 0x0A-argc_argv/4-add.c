@@ -15,11 +15,11 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		if (atoi(argv[i]) < 0 && atoi(argv[i]) > 9)
-			 {
-				puts("Error");
-				return (1);
-			}
-			 a = a + atoi(argv[i]);
+		{
+			puts("Error");
+			return (1);
+		}
+		a = a + atoi(argv[i]);
 	}
 	printf("%d\n", a);
 	return (0);
