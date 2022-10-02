@@ -10,11 +10,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int a = 0, i, j;
+	int a = 0, i;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i] < 0 && atoi(argv[i] > 9)
+		if (atoi(argv[i]) < 0 && atoi(argv[i]) > 9)
 			 {
 				puts("Error");
 				return (1);
