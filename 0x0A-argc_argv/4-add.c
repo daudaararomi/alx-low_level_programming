@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - adds numbers
@@ -10,19 +11,22 @@
  */
 int main(int argc, char *argv[])
 {
-	int a = 0, i;
+	int a = 0, i, j;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) == 0 && atoi(argv[i]) <= 9)
+		for (j = 0; argv[i][j]; j++)
 		{
-			a = a + atoi(argv[i]);
+			if (isdigit(argv[i][j]) == 0)
+			{
+				puts("Error");
+				return (1);
+			}
 		}
-		else
-		{
-			puts("Error");
-			return (1);
-		}
+	}
+	for (i = 1; i < argc; i++)
+	{
+		a += atoi(argv[i]);
 	}
 	printf("%d\n", a);
 	return (0);
