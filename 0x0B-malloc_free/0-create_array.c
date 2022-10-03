@@ -3,13 +3,12 @@
 #include <stdlib.h>
 
 /**
- * create_array -function that creates an array of chars, and initialize it
+ * create_array - function that creates an array of chars, and initialize it
  * @size: size of the array
  * @c: array variable
  *
- * return : char array
+ * Return: pointer to the array or NULL if malloc fails
  */
-
 char *create_array(unsigned int size, char c)
 {
 	char *str;
