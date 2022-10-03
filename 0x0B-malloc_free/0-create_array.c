@@ -3,18 +3,18 @@
 #include <stdlib.h>
 
 /**
- * create_array -function that creates an array of chars, and initialize it 
+ * create_array -function that creates an array of chars, and initialize it
  * @size: size of the array
  * @c: array variable
  *
- * Return : char array
+ * return : char array
  */
 
 char *create_array(unsigned int size, char c)
 {
 	char *str;
 	unsigned int i = 0;
-       	str = malloc(sizeof(char)*size);
+	str = malloc(sizeof(char) * size);
 	if (str == NULL)
 	{
 		return (NULL);
