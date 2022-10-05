@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- *alloc_grid -function that returns a pointer to a 2 dimensional arrayofintegers
+ *alloc_grid -function that returns a pointer to a 2 dimensional array
  * @width: number of row
  * @height: number of column
  * Return: pointer to concantenated string or NULL if error
