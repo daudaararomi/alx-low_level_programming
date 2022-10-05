@@ -6,7 +6,7 @@
  * @height: number of column
  * Return: pointer to concantenated string or NULL if error
  */
-int **alloc_grid(int *width, char *s2)
+int **alloc_grid(int *width, int *height)
 {
 	int **array;
 	int i, j;
