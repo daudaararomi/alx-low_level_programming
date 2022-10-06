@@ -1,0 +1,51 @@
+#include "main.h"
+#include <stdlib.h>
+/**
+ *argstostr -function that concatenates all the arguments of your program
+ * @ac: count of argument
+ * @av: argument
+ * Return: pointer to concantenated string or NULL if error
+ */
+char *argstostr(int ac, char **av)
+{
+	char *array;
+	int i = 0, j = 0, m = 0;
+
+	if (ac == 0)
+		return (NULL);
+	if (av == NULL)
+		return (NULL);
+	for ( i = 0; i < ac; i++)
+	{
+		j = 0;
+		while (av[i][j])
+		{
+			j++;
+			m++;
+		}
+	}
+	m++;
+	array = malloc(sizeof(char ) * m);
+	if (array == NULL)
+		return (NULL);
+	m = 0;
+	for (i = 0; i < ac; i++)
+	{
+		j = 0;
+		while (av[i][j])
+		{
+			array[j + m] = av[i][j];
+			j++;
+		}
+		/*	array[j + m] = '\n';*/
+		j = 0;
+		while (av[i][j])
+		{
+			m++;
+			j++;
+		}
+		array[m + 1] = '\n';
+		  m = m + 1;
+	}
+	return (array);
+}
