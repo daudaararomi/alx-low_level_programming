@@ -7,7 +7,7 @@
  * malloc_checked -a function that allocates memory using malloc.
  *@b: unsigned integer size of memory
  *
- * Return: a pointer to the allocated memory normal process termination if error
+ * Return: a pointer to the allocated mem normal process termination if error
  */
 
 void *malloc_checked(unsigned int b)
