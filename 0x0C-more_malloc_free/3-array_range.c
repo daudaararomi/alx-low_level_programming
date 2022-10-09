@@ -5,7 +5,7 @@
  *@min: minimum input
  *@max: maxmum input
  *
- *return: the pointer to the newly allocated memory or NULL if fails
+ *Return: the pointer to the newly allocated memory or NULL if fails
  */
 
 int *array_range(int min, int max)
