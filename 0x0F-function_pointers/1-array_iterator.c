@@ -2,14 +2,16 @@
 #include <stddef.h>
 /**
  * array_iterator -executes a function given as a parameter on each element
- *@name: name to print
- *@f: pointer to the function  that will print the name
+ *@array: name to of the array ontaining the elements
+ *@size: size of the array
+ *@action: function pointer
  *
  *Return:Noting to print
  */
 void array_iterator(int *array, int size, void (*action)(int))
 {
 	int i = 0;
+
 	if (array && action)
 	{
 		while (i < size)
