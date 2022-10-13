@@ -1,0 +1,70 @@
+#include "3-calc.h"
+#include <stdlib.h>
+/**
+ * op_add - to add two values
+ *
+ * @a:first operand
+ * @b: Tsecond operand
+ */
+int op_add(int a, int b)
+{
+	int c;
+
+	c = a + b;
+	return (c);
+}
+
+/**
+ * op_sub - to subract two values
+ *
+ * @a:first operand
+ * @b:second operand
+ */
+int op_sub(int a, int b)
+{
+	int c;
+
+	c = a - b;
+	return (c);
+}
+
+/**
+ * op_mul - to multiply two values
+ *
+ * @a:first operand
+ * @b:second operand
+ */
+int op_mul(int a, int b)
+{
+	int c;
+
+	c = a * b;
+	return (c);
+}
+
+/**
+ * op_div - to divide two values
+ *
+ * @a:first operand
+ * @b: Tsecond operand
+ */
+int op_div(int a, int b)
+{
+	int c;
+
+	c = a / b;
+	return (c);
+}
+/**
+ * op_mod - to find reminder after division
+ *
+ * @a:first operand
+ * @b: Tsecond operand
+ */
+int op_mod(int a, int b)
+{
+	int c;
+
+	c = a % b;
+	return (c);
+}
