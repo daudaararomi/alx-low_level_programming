@@ -10,12 +10,12 @@
  */
 void print_c(va_list c)
 {
-	printf("%c", va_arg(c, char));
+	printf("%c", va_arg(c, int));
 }
 
 /**
  * print_s - prints a string
- * @s: string to print
+ * @st: string to print
  *
  * Return: void
  */
@@ -45,9 +45,9 @@ void print_i(va_list i)
  *
  * Return: void
  */
-void print_f(va_list fl)
+void print_f(va_list f)
 {
-	printf("%f", va_arg(fl, double));
+	printf("%f", va_arg(f, double));
 }
 
 /**
@@ -66,10 +66,10 @@ void print_all(const char * const format, ...)
 		{"f", print_f},
 		{NULL, NULL}
 	};
-	va_list pa;
-	char *separator = ",";
+	va_list ap;
+	char *separator = "";
 
-	va_start(pa, format);
+	va_start(ap, format);
 	i = 0;
 	while (format && format[i])
 	{
@@ -79,13 +79,14 @@ void print_all(const char * const format, ...)
 			if (*(p[j].t) == format[i])
 			{
 				printf("%s", separator);
-				p[j].f(pa);
+				separator = ", ";
+				p[j].f(ap);
 				break;
 			}
 			j++;
 		}
 		i++;
 	}
-	va_end(pa);
-	printf("\n");
+	va_end(ap);
+	putchar('\n');
 }
