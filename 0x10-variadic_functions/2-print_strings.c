@@ -13,13 +13,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i = 0;
 	va_list ap;
-	char str;
+	char *str;
 
 	va_start(ap, n);
 	while (i < n)
 	{
-		if(va_arg(ap, char))
-			printf("%s", va_arg(ap, char));
+		str = va_arg(ap, char *);
+		if(str)
+			printf("%s", str);
 		else
 			printf("(nil)");
 		if (i < n - 1 && separator)
