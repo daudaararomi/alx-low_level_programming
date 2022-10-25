@@ -4,6 +4,7 @@
 /**
  *get_nodeint_at_index -that returns the nth node of a listint_t linked list
  * @head: douuble pointer to the beginning of a listint_t list
+ *@index: nth position
  *
  * Return: nth  node
  */
