@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * reverse_listintd -reverses a listint_t linked list.
+ * reverse_listint -reverses a listint_t linked list.
  * @head: double pointer to the beginning of a listint_t list
  *
  * Return: a pointer to the first node of the reversed list
