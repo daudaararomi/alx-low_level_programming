@@ -9,7 +9,9 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int mask = 32768;
+	unsigned long int bi;
+	/*unsigned int mask = 32768;
+
 	while (mask > 0)
 	{
 		if ((n & mask) == 0)
@@ -17,5 +19,12 @@ void print_binary(unsigned long int n)
 		else
 			putchar('1');
 		mask = mask >> 1;
-	}
+		}*/
+	if (n > 1)
+		print_binary(n >> 1);
+	bi = n & 1;
+	if (bi == 1)
+		putchar('1');
+	else
+		putchar('0');
 }
