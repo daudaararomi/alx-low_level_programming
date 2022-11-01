@@ -12,7 +12,8 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, sz, i = 0;
+	int fd;
+	size_t sz, i = 0;
 
 	char *c = (char *)malloc(sizeof(char) * letters);
 
@@ -23,16 +24,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	if (filename == NULL)
 		return (0);
-	sz = read(fd, c, lettters);
-	if (sz == letters)
-		return (0);
+	sz = read(fd, c, letters);
 	c[sz] = '\0';
 	while (i < sz)
 	{
-		putchar(c[i] + '0');
+		putchar(c[i]);
 		i++;
 	}
 	putchar('\n');
-	return (sz);
+	return (i);
 
 }
