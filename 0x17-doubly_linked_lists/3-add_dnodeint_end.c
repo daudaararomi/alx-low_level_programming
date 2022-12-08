@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * add_dnodeint_end - add a new node at the end of dlistint_t list
