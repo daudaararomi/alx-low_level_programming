@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * sum_dlistint - find the sum of all values in dlistint_t int
