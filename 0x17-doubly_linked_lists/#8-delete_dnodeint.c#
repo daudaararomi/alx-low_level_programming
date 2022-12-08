@@ -1,0 +1,39 @@
+#include "main.h"
+
+/**
+ * delete_dnodeint_at_index - delete node at index in dlistint_t list
+ * @head: list
+ * @index: position of node to delete
+ *
+ * Return: 1 if success, -1 if failure
+ */
+
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+{
+	dlistint_t *run_linked = *head;
+	unsigned int i;
+
+	if (head == NULL || *head == NULL)
+		return (-1);
+
+	if (index == 0)
+	{
+		*head = run_linked->next;
+		if (*head != NULL)
+			(*head)->prev = NULL;
+		free(run_linked);
+		return (1);
+	}
+
+	while (i < index)
+	{
+		if (run_linked == NULL)
+			return (-1);
+		run_linked = run_linked->next;
+	}
+
+	run_linked->prev->next = run_linked->next;
+	if (run_linked->next != NULL)
+	       run_linked->next->prev = run_linked->prev;
+	free(run_linked);
+	return (1);
