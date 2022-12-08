@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  *print_dlistint-  prints all the elements of a dlistint_t list
  *@n: node todlistint_t list to print its elements
